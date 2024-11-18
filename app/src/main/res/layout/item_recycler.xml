@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- ImageView untuk gambar wayang -->
+
+    <!-- TextView untuk nama wayang -->
+
+    <!-- TextView untuk karakter wayang -->
+
+    <!-- TextView untuk deskripsi wayang -->
+
+    <ImageView
+        android:id="@+id/gambarWayang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/karakterWayang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/namaWayang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="Nama Wayang"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/karakterWayang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Karakter Wayang"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/namaWayang"
+        app:layout_constraintTop_toBottomOf="@+id/namaWayang" />
+
+    <TextView
+        android:id="@+id/deskripsiWayang"
+        android:layout_width="262dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="28dp"
+        android:text="Deskripsi Wayang"
+        android:textColor="#9E9E9E"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gambarWayang"
+        app:layout_constraintTop_toBottomOf="@+id/karakterWayang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
